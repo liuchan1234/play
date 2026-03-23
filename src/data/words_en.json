@@ -1,0 +1,398 @@
+[
+  [
+    "Coke",
+    "Pepsi"
+  ],
+  [
+    "Netflix",
+    "YouTube"
+  ],
+  [
+    "iPhone",
+    "Android"
+  ],
+  [
+    "TikTok",
+    "Instagram"
+  ],
+  [
+    "Uber",
+    "Lyft"
+  ],
+  [
+    "Marvel",
+    "DC"
+  ],
+  [
+    "Pizza",
+    "Burger"
+  ],
+  [
+    "Summer",
+    "Winter"
+  ],
+  [
+    "Cats",
+    "Dogs"
+  ],
+  [
+    "Laptop",
+    "Tablet"
+  ],
+  [
+    "Gym",
+    "Yoga"
+  ],
+  [
+    "Coffee",
+    "Energy Drink"
+  ],
+  [
+    "Helicopter",
+    "Airplane"
+  ],
+  [
+    "Umbrella",
+    "Raincoat"
+  ],
+  [
+    "Backpack",
+    "Suitcase"
+  ],
+  [
+    "Ice Cream",
+    "Popsicle"
+  ],
+  [
+    "Desert",
+    "Beach"
+  ],
+  [
+    "Penguin",
+    "Ostrich"
+  ],
+  [
+    "Crocodile",
+    "Shark"
+  ],
+  [
+    "Tinder",
+    "Bumble"
+  ],
+  [
+    "Millennial",
+    "Gen Z"
+  ],
+  [
+    "Influencer",
+    "Celebrity"
+  ],
+  [
+    "Podcast",
+    "Radio"
+  ],
+  [
+    "Therapist",
+    "Psychiatrist"
+  ],
+  [
+    "Introvert",
+    "Extrovert"
+  ],
+  [
+    "Startup",
+    "Cult"
+  ],
+  [
+    "Vegan",
+    "Vegetarian"
+  ],
+  [
+    "Hangover",
+    "Drunk"
+  ],
+  [
+    "Robot",
+    "Cyborg"
+  ],
+  [
+    "Wizard",
+    "Witch"
+  ],
+  [
+    "Vampire",
+    "Werewolf"
+  ],
+  [
+    "Ninja",
+    "Pirate"
+  ],
+  [
+    "FBI",
+    "CIA"
+  ],
+  [
+    "College",
+    "High School"
+  ],
+  [
+    "Money",
+    "Fame"
+  ],
+  [
+    "Pancake",
+    "Waffle"
+  ],
+  [
+    "Pop",
+    "Rock"
+  ],
+  [
+    "WiFi",
+    "Bluetooth"
+  ],
+  [
+    "Password",
+    "Key"
+  ],
+  [
+    "Poison",
+    "Antidote"
+  ],
+  [
+    "Castle",
+    "Villa"
+  ],
+  [
+    "Prison",
+    "Asylum"
+  ],
+  [
+    "Detective",
+    "Spy"
+  ],
+  [
+    "Rose",
+    "Tulip"
+  ],
+  [
+    "Ghosting",
+    "Breadcrumbing"
+  ],
+  [
+    "Gaslighting",
+    "Love Bombing"
+  ],
+  [
+    "Situationship",
+    "Friends with Benefits"
+  ],
+  [
+    "Red Flag",
+    "Green Flag"
+  ],
+  [
+    "Main Character Energy",
+    "NPC Energy"
+  ],
+  [
+    "Touch Grass",
+    "Go Outside"
+  ],
+  [
+    "Doomscrolling",
+    "Binge Watching"
+  ],
+  [
+    "Quiet Quitting",
+    "Quiet Firing"
+  ],
+  [
+    "Side Hustle",
+    "Passion Project"
+  ],
+  [
+    "FOMO",
+    "JOMO"
+  ],
+  [
+    "Cancel Culture",
+    "Call Out Culture"
+  ],
+  [
+    "Mansplaining",
+    "Gaslighting"
+  ],
+  [
+    "Hot Take",
+    "Unpopular Opinion"
+  ],
+  [
+    "Rizz",
+    "Charisma"
+  ],
+  [
+    "Slay",
+    "Serve"
+  ],
+  [
+    "No Cap",
+    "For Real"
+  ],
+  [
+    "Sus",
+    "Shady"
+  ],
+  [
+    "Simp",
+    "Simu"
+  ],
+  [
+    "Toxic",
+    "Problematic"
+  ],
+  [
+    "Bestie",
+    "Ride or Die"
+  ],
+  [
+    "Spotify",
+    "Apple Music"
+  ],
+  [
+    "ChatGPT",
+    "Siri"
+  ],
+  [
+    "Tesla",
+    "Edison"
+  ],
+  [
+    "Amazon",
+    "Walmart"
+  ],
+  [
+    "Google",
+    "Bing"
+  ],
+  [
+    "Twitter/X",
+    "Threads"
+  ],
+  [
+    "Fortnite",
+    "Apex Legends"
+  ],
+  [
+    "Minecraft",
+    "Roblox"
+  ],
+  [
+    "Harry Potter",
+    "Lord of the Rings"
+  ],
+  [
+    "Batman",
+    "Iron Man"
+  ],
+  [
+    "Star Wars",
+    "Star Trek"
+  ],
+  [
+    "Disney",
+    "Pixar"
+  ],
+  [
+    "Starbucks",
+    "Dunkin"
+  ],
+  [
+    "Nike",
+    "Adidas"
+  ],
+  [
+    "PlayStation",
+    "Xbox"
+  ],
+  [
+    "Sushi",
+    "Sashimi"
+  ],
+  [
+    "Tacos",
+    "Burritos"
+  ],
+  [
+    "Ramen",
+    "Pho"
+  ],
+  [
+    "Croissant",
+    "Bagel"
+  ],
+  [
+    "Avocado Toast",
+    "Acai Bowl"
+  ],
+  [
+    "Mac and Cheese",
+    "Grilled Cheese"
+  ],
+  [
+    "Boba Tea",
+    "Iced Coffee"
+  ],
+  [
+    "Wings",
+    "Nuggets"
+  ],
+  [
+    "Fries",
+    "Onion Rings"
+  ],
+  [
+    "Cheesecake",
+    "Tiramisu"
+  ],
+  [
+    "Ex",
+    "Current"
+  ],
+  [
+    "Long Distance",
+    "Online Dating"
+  ],
+  [
+    "Confession",
+    "Hint"
+  ],
+  [
+    "First Date",
+    "Blind Date"
+  ],
+  [
+    "Breakup Text",
+    "In Person Breakup"
+  ],
+  [
+    "DTR Talk",
+    "The Ick"
+  ],
+  [
+    "Slow Fade",
+    "Ghosting"
+  ],
+  [
+    "Talking Stage",
+    "Dating"
+  ],
+  [
+    "Rebound",
+    "The One"
+  ],
+  [
+    "Couples Therapy",
+    "Self Help Book"
+  ]
+]

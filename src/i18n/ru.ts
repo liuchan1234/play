@@ -1,0 +1,180 @@
+import type { I18nTexts } from './types';
+
+export const ruTexts: I18nTexts = {
+  i18n: {
+    chooseLanguage: 'Выберите язык',
+    back: '🔙 Назад',
+  },
+  mainMenu: {
+    welcome: 'Добро пожаловать в @Blink_AIgames_bot — давайте играть!',
+    btnUndercover: 'Кто шпион',
+    btnCancel: 'Отмена',
+    cancelAnswer: 'Ок, я в фоне. Нужна игра — /play!',
+    usePlayggForLatestMenu: 'Старое меню. Отправьте /play.',
+    privatePlayggHint: '🎮 Добавьте меня в группу и отправьте /play!',
+    groupUsePlaygg: '👉 В группе: /play для меню игр.',
+    btnTruthOrDare: '🎯 Правда или Действие',
+    btnLanguage: '🌐 Язык',
+  },
+  errors: {
+    generic: '⚠️ Произошла ошибка. Попробуйте позже.',
+  },
+  common: {
+    onlyGroups: 'Эта игра только в группах.',
+    btnStartGame: '▶ Начать игру',
+    roomFull: (used: number, max: number) => `Комнаты заполнены: ${used}/${max}. Попробуйте позже.`,
+    roomClosedOrNotFound: 'Комната закрыта или не существует.',
+    linkExpiredGameStarted: 'Игра уже началась. Ссылка недействительна.',
+    roomLabel: (roomId: number) => `🎪 Комната ${roomId}`,
+  },
+  groupWelcome: {
+    title: '🎮 Добро пожаловать в @Blink_AIgames_bot!',
+    intro: 'Играйте в «Кто шпион» и другие игры. Отправьте /play!',
+    separator: '─────── ✦ ───────',
+    partners: 'Партнёры: Blink — больше общения и игр!',
+  },
+  growth: {
+    ctaText: 'Попробуйте Blink — больше общения и игр!',
+    ctaButton: 'Открыть Blink',
+  },
+  intro: {
+    undercover:
+      '🕵️ Кто шпион\n' +
+      'Напряжённая логическая игра: кто врёт?\n' +
+      '👥 Игроки: 5–12\n' +
+      '🕹 Ход игры:\n' +
+      '  1. Получите слово в личке бота. У шпионов слово немного другое! 🤫\n' +
+      '  2. По очереди описывайте слово за 30 сек — не называйте напрямую!\n' +
+      '  3. 90 сек свободной дискуссии — ловите шпиона!\n' +
+      '  4. Голосование: нажмите кнопку за 20 сек.\n' +
+      '❌ Если никто не голосует — игра завершается!\n' +
+      '🎭 Роли: 5–6 → 1 шпион | 7–9 → 2 | 10–12 → 3\n' +
+      '🟢 Мирные: вычислить всех шпионов.\n' +
+      '🔴 Шпионы: шпионов ≥ мирных.',
+    confess:
+      '🎭 Анонимная стена\n' +
+      'Хочешь сказать, но не решаешься? Пусть цвет скажет за тебя!\n\n' +
+      '🕹 Как играть:\n' +
+      '  1. Нажми кнопку — напиши Боту в личку, что хочешь сказать\n' +
+      '  2. Бот анонимно запостит в группу в виде яркого плаката\n' +
+      '  3. Один человек = один цвет 10 минут, потом цвет меняется\n' +
+      '  4. Пиши сколько хочешь — без ограничений\n\n' +
+      '🤫 Никто не знает, кто ты. Твой цвет — это твоя личность.',
+  },
+  undercover: {
+    joinSuccess: 'Вы присоединились. Ожидайте начала.',
+    joinSuccessWithReturnLink: (groupLink: string) =>
+      `Вы присоединились.\nВернуться 👉 <a href="${groupLink}">Назад</a>`,
+    countdown10s: '⏱ Регистрация через 10 сек',
+    gameStartCivilian: (word: string) => `Игра началась! Ваше слово: ${word}`,
+    blankWord: '(Пусто)',
+    blankCivilianMessage: 'Игра началась! У вас нет слова (пусто).',
+    nowSpeaking: (name: string) => `Говорит: 📍 @${name}`,
+    speakButtonHint: '👇 Кнопка только для говорящего❗️',
+    btnEndSpeak: 'Завершить ход',
+    btnEndRound: 'Завершить раунд',
+    btnEndGame: '🛑 Завершить игру',
+    freeTalk: '🗣 Свободная дискуссия!',
+    votePrompt: 'Голосуйте за подозреваемого:',
+    voteProgress: (voted: number, total: number) => `📊 ${voted}/${total} проголосовали`,
+    voteChanged: (name: string) => `Голос изменён на ${name}`,
+    eliminated: (name: string) => `💀 ${name} выбыл!`,
+    civiliansWin: '🏆 Мирные победили! Все шпионы раскрыты.',
+    undercoverWins: '🏆 Шпионы победили! Шпионов ≥ мирных.',
+    nextRound: 'Следующий раунд',
+    joinStartText: (link: string, min: number, max: number, seconds: number) =>
+      `🎭 «Кто шпион» начинается!\nПрисоединиться:\n${link}\n\n${min}–${max} игроков, ${seconds}с.`,
+    linkExpiredGameStarted: 'Игра началась. Ссылка недействительна.',
+    linkExpiredRoomFull: (max: number) => `Комната полна (макс ${max}). Ссылка недействительна.`,
+    startCancelled: 'Недостаточно игроков. Зовите друзей!',
+    startCancelledWithCount: (current: number, required: number) =>
+      `Мало игроков (${current}/${required}). Зовите друзей!`,
+    startFailed: 'Не удалось начать. Попробуйте снова.',
+    startFailedNoRights: 'Не удалось: боту нужно право отправлять сообщения.',
+    startAnnounce: (count: number) => `«Кто шпион» началась! Игроков: ${count}.`,
+    voteDone: (name: string) => `Голос за ${name}`,
+    notInThisGame: 'Вы не в этой игре.',
+    noVotesRetry: 'Нет голосов. Игра завершена.',
+    tieNoElimination: (maxVotes: number) => `⚖️ Ничья (${maxVotes} голосов)! Никто не выбывает.`,
+    nextRoundIn5s: '⏱ Следующий раунд через 5с.',
+    tallyTitle: '🗳 Итоги:',
+    tallyLine: (name: string, count: number, voters: string) => `${name}  ${count} гол. <<< ${voters}`,
+    noVotesInTally: '(Нет голосов)',
+    roomFull: (used: number, max: number) => `Комнаты полны: ${used}/${max}. Позже.`,
+    currentRoomPlayers: (roomId: number, count: number, names: string) => `🎪 Комната ${roomId}: ${count} — ${names}`,
+    roundEnded: 'Раунд завершён.',
+    alreadyEnded: 'Уже завершено.',
+    notYourTurn: 'Не ваш ход!',
+    gameForceEnded: 'Игра принудительно завершена.',
+    invalidVoteTarget: 'Недопустимая цель голосования.',
+    cannotVoteSelf: 'Нельзя голосовать за себя!',
+    returnToGroup: 'Вернуться в группу',
+    btnPlayAgain: '🔄 Ещё раз',
+    civiliansLabel: 'Мирные',
+    undercoverLabel: 'Шпионы',
+    civiliansWinSubtitle: 'Все шпионы раскрыты!',
+    undercoverWinSubtitle: 'Мирных больше не осталось...',
+    reportGameOver: '🚩 Игра окончена!',
+    reportSpyLabel: '🕵️‍♂️ Шпионы',
+    reportCivLabel: '👨‍🌾 Мирные',
+    reportBlankWord: '🚫 Пусто',
+    reportNone: '(нет)',
+    reportWinLine: (winnerLabel: string) => `🏆 [ ${winnerLabel} ] Победа!`,
+  },
+  truthOrDare: {
+    chooseTier: '🎯 <b>Правда или Действие</b>\n\nВыберите режим:',
+    tierIcebreaker: '❄️ Лайт',
+    tierAdvanced: '🔮 Без фильтров',
+    tierSpicy: '🌙 После полуночи (18+)',
+    recruitText: (min: number, max: number, tierLabel: string) =>
+      `🎯 <b>Правда или Действие</b>  ${tierLabel}\n\nНажмите, чтобы присоединиться! ${min}–${max} игроков.`,
+    recruitTextWithPlayers: (min: number, max: number, count: number, names: string, tierLabel: string) =>
+      `🎯 <b>Правда или Действие</b>  ${tierLabel}\n\nУже ${count}: ${names}\n\n${min}–${max} игроков, присоединяйтесь!`,
+    btnJoin: '✋ Вступить',
+    btnStart: '▶ Начать',
+    btnTruth: '💬 Правда',
+    btnDare: '🔥 Действие',
+    btnSkip: '⏭ Пропустить',
+    btnNext: '👉 Далее',
+    btnEndGame: '🛑 Закончить',
+    yourTurn: (name: string) => `Очередь <b>${name}</b> — выбирайте:`,
+    truthLabel: '💬 Правда',
+    dareLabel: '🔥 Действие',
+    questionFor: (name: string, label: string, question: string) =>
+      `${label} → <b>${name}</b>\n\n${question}`,
+    joined: 'Вы вступили!',
+    alreadyJoined: 'Вы уже в игре',
+    alreadyRunning: 'Игра уже идёт. Сначала завершите текущую.',
+    alreadyStarted: 'Игра уже началась',
+    sessionEnded: 'Игра завершена',
+    notYourTurn: 'Сейчас не ваша очередь',
+    notInGame: 'Вы не в этой игре',
+    notEnough: (current: number, required: number) => `Мало игроков (${current}/${required})`,
+    full: 'Игра заполнена',
+    gameStarted: (count: number, tierLabel: string) => `🎯 Правда или Действие! Игроков: ${count}. Режим: ${tierLabel}`,
+    gameEnded: '🎯 Правда или Действие завершена. До следующего раза!',
+    timeoutSkipped: (name: string) => `⏱ ${name} — время вышло, пропуск`,
+  },
+  anonymousChat: {
+    menuButton: '🎭 Анонимная стена',
+    groupPrompt: '🎭 Анонимная стена открыта!\nНажмите кнопку — напишите мне в личку, что хотите сказать 👇\nВаша личность заменена цветом. Никто не узнает, кто вы.',
+    btnStart: '🎭 Написать',
+    activated: (group: string) => `🎭 Режим стены! Группа: <b>${group}</b>`,
+    activatedHint: 'Просто пишите — я запощу анонимно в группу.\nПродолжайте писать. /quit чтобы выйти.',
+    sent: '✅ Запощено',
+    sendFailed: 'Ошибка отправки. Попробуйте ещё раз.',
+    quit: '🎭 Режим стены завершён.',
+    quitHint: 'Хотите ещё? Нажмите 🎭 в группе.',
+    quitInGroup: 'Отправьте /quit в нашем личном чате чтобы выйти',
+    tooLong: 'Слишком длинно — покороче!',
+    tooShort: 'Напишите хоть что-нибудь!',
+    textOnly: '🎭 Стена — только текст',
+    disabled: '🔒 Анонимная стена отключена',
+    notInGroup: 'Вы не в этой группе',
+    alsoSay: '🎭 Тоже хочу',
+    anonLabel: 'Аноним',
+    adminOff: '🔒 Анонимная стена отключена',
+    adminOn: '🎭 Анонимная стена включена',
+    adminOnly: 'Только для админов',
+  },
+};
