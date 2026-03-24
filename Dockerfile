@@ -29,6 +29,8 @@ COPY assets/fonts/ ./assets/fonts/
 COPY src/data/ ./dist/data/
 
 ENV NODE_ENV=production
+# telegraf → node-fetch → whatwg-url uses Node's deprecated built-in `punycode` (DEP0040); harmless until deps upgrade
+ENV NODE_OPTIONS="--disable-warning=DEP0040"
 EXPOSE ${PORT:-3000}
 
 # Health check (Railway also checks /health via railway.toml)
