@@ -410,6 +410,13 @@ async function start() {
     }
   }
 
+  if (process.env.NODE_ENV === 'production' && !appConfig.useWebhook) {
+    logger.warn(
+      {},
+      'Polling in production: Telegram allows only one getUpdates consumer per bot. Set WEBHOOK_URL + WEBHOOK_SECRET on Railway, scale to 1 replica, and stop any local dev using the same BOT_TOKEN.',
+    );
+  }
+
   if (appConfig.useWebhook) {
     if (!appConfig.WEBHOOK_SECRET) {
       logger.error({}, 'WEBHOOK_SECRET is empty - webhook is unprotected, refusing to start');
