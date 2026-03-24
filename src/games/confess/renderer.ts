@@ -243,11 +243,16 @@ export async function renderCard(
   return Buffer.from(cvs.toBuffer('image/png'));
 }
 
+/** Minimal 2D path API for roundRect (matches @napi-rs/canvas; no DOM lib in tsconfig). */
+type RoundRectPathCtx = {
+  beginPath(): void;
+  moveTo(x: number, y: number): void;
+  arcTo(x1: number, y1: number, x2: number, y2: number, r: number): void;
+  closePath(): void;
+};
+
 /** Draw a rounded rectangle path */
-function roundRect(
-  ctx: CanvasRenderingContext2D | { beginPath(): void; moveTo(x: number, y: number): void; arcTo(x1: number, y1: number, x2: number, y2: number, r: number): void; closePath(): void },
-  x: number, y: number, w: number, h: number, r: number,
-): void {
+function roundRect(ctx: RoundRectPathCtx, x: number, y: number, w: number, h: number, r: number): void {
   ctx.beginPath();
   ctx.moveTo(x + r, y);
   ctx.arcTo(x + w, y, x + w, y + h, r);
