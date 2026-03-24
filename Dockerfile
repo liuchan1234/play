@@ -22,8 +22,8 @@ RUN npm ci --omit=dev
 
 COPY --from=builder /app/dist ./dist
 
-# Copy font assets (custom fonts, optional — system fonts are the fallback)
-COPY assets/fonts/ ./assets/fonts/ 2>/dev/null || true
+# Copy font assets (custom fonts; system fonts in image are the fallback)
+COPY assets/fonts/ ./assets/fonts/
 
 # Copy word pair data
 COPY src/data/ ./dist/data/
