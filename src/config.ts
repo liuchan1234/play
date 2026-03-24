@@ -7,8 +7,16 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+function normalizeWebhookUrl(raw: string): string {
+  const s = raw.trim();
+  if (!s) return '';
+  // Railway 上常只贴域名；Telegram 需要完整 HTTPS URL
+  if (/^https?:\/\//i.test(s)) return s;
+  return `https://${s}`;
+}
+
 const REDIS_URL = process.env.REDIS_URL ?? '';
-const WEBHOOK_URL = process.env.WEBHOOK_URL ?? ''; // 例如 https://yourdomain.com
+const WEBHOOK_URL = normalizeWebhookUrl(process.env.WEBHOOK_URL ?? ''); // 例如 https://yourdomain.com
 const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET ?? ''; // Telegram secret_token 校验
 const PORT = Number(process.env.PORT) || 3000;
 const BOT_TOKEN = process.env.BOT_TOKEN ?? '';
